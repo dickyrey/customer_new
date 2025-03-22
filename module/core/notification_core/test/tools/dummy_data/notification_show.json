@@ -1,0 +1,12 @@
+{
+    "code": "10100",
+    "data": {
+        "id": 57,
+        "title": "Percobaan Masuk",
+        "content": "Percobaan masuk perangkat baru.",
+        "type": "security",
+        "is_readed": "0",
+        "created_at": "2025-02-10 15:01:06",
+        "updated_at": "2025-02-10 15:01:06"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "code": "10100",
+    "data": {
+        "id": 27,
+        "name": "Hanny Novianty",
+        "phone": "628994577907",
+        "address": "Gg, Hj Deralib No. 10",
+        "type": "home",
+        "latitude": -1.6819289,
+        "longitude": 109.2648223,
+        "street": {
+            "id": 6,
+            "street": "Jl. Diponegoro,. Kantor,. Delta Pawan"
+        }
+    }
+}

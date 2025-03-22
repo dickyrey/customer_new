@@ -1,0 +1,73 @@
+{
+    "data": [
+        {
+            "id": 27,
+            "name": "Hanny Novianty",
+            "phone": "628994577907",
+            "address": "Gg, Hj Deralib No. 10",
+            "type": "home",
+            "street": {
+                "id": 6,
+                "street": "Jl. Diponegoro,. Kantor,. Delta Pawan"
+            }
+        },
+        {
+            "id": 28,
+            "name": "Da Qiao",
+            "phone": "6289689035998",
+            "address": "Okeoke",
+            "type": "home",
+            "street": {
+                "id": 6,
+                "street": "Jl. Diponegoro,. Kantor,. Delta Pawan"
+            }
+        },
+        {
+            "id": 29,
+            "name": "Hanny Novianty",
+            "phone": "628994577907",
+            "address": "Gg, Hj Deralib No. 10",
+            "type": "home",
+            "street": {
+                "id": 1,
+                "street": "Jln. Achmad Yani,. Tuan Tuan,. Benua Kayong"
+            }
+        },
+        {
+            "id": 30,
+            "name": "Hanny Novianty",
+            "phone": "628994577907",
+            "address": "Gg, Hj Deralib No. 10",
+            "type": "home",
+            "street": {
+                "id": 1,
+                "street": "Jln. Achmad Yani,. Tuan Tuan,. Benua Kayong"
+            }
+        },
+        {
+            "id": 32,
+            "name": "ww",
+            "phone": "628968334322",
+            "address": "dsds",
+            "type": "home",
+            "street": {
+                "id": 5,
+                "street": "Jl. Test,. Tuan Tuan,. Benua Kayong"
+            }
+        }
+    ],
+    "links": {
+        "first": "https:\/\/hs68.co.id\/api\/customer\/address?page=1",
+        "last": null,
+        "prev": null,
+        "next": null
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "path": "https:\/\/hs68.co.id\/api\/customer\/address",
+        "per_page": 10,
+        "to": 5
+    },
+    "code": "10100"
+}

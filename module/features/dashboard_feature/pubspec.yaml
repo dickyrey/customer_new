@@ -1,0 +1,43 @@
+name: dashboard_feature
+description: "A new Flutter package project."
+version: 0.0.1
+homepage: null
+publish_to: none
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  product_core:
+    path: ../../core/product_core
+
+
+  authentication_feature:
+    path: ../../features/authentication_feature
+  banner_feature:
+    path: ../../features/banner_feature
+
+  shared_arguments:
+    path: ../../shareds/shared_arguments
+  shared_common:
+    path: ../../shareds/shared_common
+  shared_libraries:
+    path: ../../shareds/shared_libraries
+  shared_utilities:
+    path: ../../shareds/shared_utilities
+  shared_widget:
+    path: ../../shareds/shared_widget
+
+dev_dependencies:
+  build_runner: ^2.4.11
+  flutter_test:
+    sdk: flutter
+  freezed: ^2.5.2
+  very_good_analysis: ^6.0.0
+
+flutter:
+  generate: true

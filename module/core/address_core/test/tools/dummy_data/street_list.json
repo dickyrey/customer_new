@@ -1,0 +1,37 @@
+{
+    "code": "10100",
+    "data": [
+        {
+            "id": 0,
+            "street": ",. ,. "
+        },
+        {
+            "id": 1,
+            "street": "Jln. Achmad Yani,. Tuan Tuan,. Benua Kayong"
+        },
+        {
+            "id": 2,
+            "street": "Jln. Achmad Yani,. Tuan Tuan,. Benua Kayong"
+        },
+        {
+            "id": 3,
+            "street": "Jln. Ade Irma Suryani,. Tuan Tuan,. Benua Kayong"
+        },
+        {
+            "id": 5,
+            "street": "Jl. Test,. Tuan Tuan,. Benua Kayong"
+        },
+        {
+            "id": 6,
+            "street": "Jl. Diponegoro,. Kantor,. Delta Pawan"
+        },
+        {
+            "id": 7,
+            "street": "Jl. Diponegoro,. Kantor,. Delta Pawan"
+        },
+        {
+            "id": 8,
+            "street": "Jl. AIP KS Tubun,. Sukaharja,. Delta Pawan"
+        }
+    ]
+}

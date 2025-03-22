@@ -1,0 +1,30 @@
+name: onboarding_feature
+description: "A new Flutter package project."
+version: 0.0.1
+homepage: null
+publish_to: none
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  shared_common:
+    path: ../../shareds/shared_common
+  shared_libraries:
+    path: ../../shareds/shared_libraries
+  shared_utilities:
+    path: ../../shareds/shared_utilities
+  shared_widget:
+    path: ../../shareds/shared_widget
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^6.0.0
+
+flutter:
+  generate: true

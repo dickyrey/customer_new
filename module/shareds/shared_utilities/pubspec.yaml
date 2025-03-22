@@ -1,0 +1,25 @@
+name: shared_utilities
+description: "A new Flutter package project."
+version: 0.0.1
+homepage: null
+publish_to: none
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  shared_common:
+    path: ../shared_common
+  shared_libraries:
+    path: ../shared_libraries
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^6.0.0
+
+flutter: null
