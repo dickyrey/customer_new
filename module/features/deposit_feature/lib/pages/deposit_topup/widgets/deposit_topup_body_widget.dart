@@ -141,7 +141,8 @@ class DepositTopupBodyWidget extends StatelessWidget {
                                       vertical: SPACE_TINY,
                                     ),
                                     decoration: BoxDecoration(
-                                      color: theme.primaryColor.withOpacity(.1),
+                                      color: theme.primaryColor
+                                          .withValues(alpha: .1),
                                       borderRadius: BorderRadius.circular(
                                         RADIUS,
                                       ),

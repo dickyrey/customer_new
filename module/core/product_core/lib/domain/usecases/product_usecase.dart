@@ -3,6 +3,7 @@ import 'package:product_core/domain/repositories/product_repository.dart';
 import 'package:shared_common/failure.dart';
 import 'package:shared_libraries/dartz/dartz.dart';
 
+//
 // ignore: one_member_abstracts
 abstract class ProductUsecase {
   Future<Either<Failure, List<Product>>> getProductList();

@@ -4,7 +4,6 @@ import 'package:deposit_core/domain/repositories/deposit_repository.dart';
 import 'package:shared_common/failure.dart';
 import 'package:shared_libraries/dartz/dartz.dart';
 
-// ignore: one_member_abstracts
 abstract class DepositUsecase {
   Future<Either<Failure, bool>> cancelDeposit(int id);
   Future<Either<Failure, DepositDetail>> createDeposit(int total);

@@ -9,6 +9,7 @@ import 'package:shared_common/exception_message.dart';
 import 'package:shared_libraries/http/http.dart' as http;
 import 'package:shared_libraries/shared_preferences/shared_preferences.dart';
 
+//
 // ignore: one_member_abstracts
 abstract class SalesDataSource {
   Future<List<SalesModel>> getSalesList();

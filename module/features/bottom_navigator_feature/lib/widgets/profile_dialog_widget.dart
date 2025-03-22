@@ -1,5 +1,6 @@
 import 'package:authentication_feature/bloc/auth_watcher/auth_watcher_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:shared_common/constants.dart';
 import 'package:shared_common/routes.dart';
@@ -244,12 +245,15 @@ class ProfileDialogWidget extends StatelessWidget {
   Future<void> openWhatsApp(BuildContext context) async {
     final url = Uri.parse(WHATSAPP_ADMIN);
     final lang = AppLocalizations.of(context)!;
+
     try {
       if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
         await showToast(msg: lang.whatsapp_not_installed);
         throw Exception('Could not launch WhatsApp');
       }
-    } catch (e) {
+    } on PlatformException {
+      await showToast(msg: lang.whatsapp_not_installed);
+    } on Exception {
       await showToast(msg: lang.whatsapp_not_installed);
     }
   }

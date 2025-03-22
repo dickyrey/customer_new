@@ -27,6 +27,7 @@ void main() {
   setUpAll(() {
     SharedPreferences.setMockInitialValues({
       'ACCESS_TOKEN':
+          // The access token is a long string, so we ignore the line length
           // ignore: lines_longer_than_80_chars
           'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMDA0MTRmMzRiYmNiMjBkZTk4ZTEwZTMwNTFhYjhkMDk5M2RjMGM2MGEwMjhjODQ5YjlkNGFiNzQ1OGQ1YjQ0MzY3ZDYwMTczMDJlMWRmNDAiLCJpYXQiOjE3MzkxNzQ0ODguOTkzMTExLCJuYmYiOjE3MzkxNzQ0ODguOTkzMTEzLCJleHAiOjE3NzA3MTA0ODguOTkyMjMxLCJzdWIiOiIxMSIsInNjb3BlcyI6W119.kh3uo-pYL0e5c-ZS7xVrf-2OxAUOz5UDuomEv4hZaeRfbx-n9kVcBr1_QQ4811vQExOgS4DD81MPqg5edzNEGtwzSDk_MYPg6pqbOPIxgCr4bivF_ue_TXHcbPakFMBt4v1R2pHQyNKkJUEFqPLvuUQ3WS_ZNZg8d9kW1JA4qUU8D8IX7nqiKG0ci2Ag-TrIqdlF68Qyje43XyOh_T-YNHFlezciDuY-mKtKW2Bxr5l9oeBJrqE1oNy3K0PiZl_FN15dzRizT-jEDdaaiNmMTeclp1phqBaURaZfJl7vHmkg3OIwuNS5t5dprTc2h7sYNLg5swstTcWEWjh_3hTUcTUK3NGL1fd5gNrd-z1cqPNWeaXVVFtJwSZA6Rb_RTKGAGjcoCWRxiF-lVBSfFq582jZXH_OdxrVVYC97sHS8YUBV1yf0iUz7UmFYt7EqHSACcqtsXaSAX6yXOrkmB49jhfDjZuCYaeC8xUhIfnHA60XALwW1_9cJtQBk5ij3YXouD7M3lFSR8R8N_EBCchYZfSH74QZ6H1gpo7t1Ud85tkKjGd3VvvwbfO9_bAeCwNsbqcI_F0IFVuEstKCpcDK4KZ-VGbNkY0ErBpyHr3Kyqo83SX4CGy7-y8JM0FCEiMgDvP9A3szgD-C5KqViVW2PwefYcmyOcW4rUToSQou-cs', // Nilai contoh
     });

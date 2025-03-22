@@ -64,7 +64,7 @@ class NotificationOverviewCardWidget extends StatelessWidget {
         child: Card(
           color: data.isReaded
               ? theme.cardColor
-              : theme.primaryColor.withOpacity(.1),
+              : theme.primaryColor.withValues(alpha: .1),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(RADIUS),
           ),

@@ -64,7 +64,7 @@ class CheckoutBodyWidget extends StatelessWidget {
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(RADIUS),
-                        color: theme.primaryColor.withOpacity(.1),
+                        color: theme.primaryColor.withValues(alpha: .1),
                       ),
                       margin: EdgeInsets.zero,
                       child: Padding(
@@ -212,7 +212,8 @@ class CheckoutBodyWidget extends StatelessWidget {
                   children: [
                     Expanded(
                       child: Text(
-                        // ignore: lines_longer_than_80_chars
+                        //
+                        //ignore: lines_longer_than_80_chars
                         '${lang.available_points} ${currencyFormat(args.user.point, symbol: '')} ${lang.points}',
                         style: theme.textTheme.titleMedium,
                       ),
@@ -221,7 +222,8 @@ class CheckoutBodyWidget extends StatelessWidget {
                       children: [
                         Icon(
                           FeatherIcons.helpCircle,
-                          color: theme.textTheme.bodyLarge?.color,
+                          color: theme.textTheme.bodyLarge?.color
+                              ?.withValues(alpha: .1),
                           size: 14,
                         ),
                         const SizedBox(width: SPACE_SMALL),
@@ -306,6 +308,7 @@ class CheckoutBodyWidget extends StatelessWidget {
                                           ),
                                           TextSpan(
                                             text:
+                                                //
                                                 // ignore: lines_longer_than_80_chars
                                                 ' (${lang.balance} ${currencyFormat(args.user.cash)})',
                                             style: theme.textTheme.bodyMedium,

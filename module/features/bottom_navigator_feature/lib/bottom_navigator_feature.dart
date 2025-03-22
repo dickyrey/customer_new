@@ -99,7 +99,8 @@ class _BottomNavigatorFeatureState extends State<BottomNavigatorFeature> {
       },
       child: PopScope(
         canPop: _willPop,
-        onPopInvoked: (v) => _willPopCallback(context, didPop: v),
+        onPopInvokedWithResult: (v, result) =>
+            _willPopCallback(context, didPop: v),
         child: Scaffold(
           body: PageView(
             controller: _controller,

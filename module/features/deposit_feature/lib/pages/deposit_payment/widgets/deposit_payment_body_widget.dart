@@ -44,6 +44,7 @@ class DepositPaymentBodyWidget extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
+                      //
                       // ignore: lines_longer_than_80_chars
                       '${DateFormat.yMMMMd('id-ID').format(args.createdAt.add(const Duration(days: 1)))} | ${DateFormat.Hm('id-ID').format(args.createdAt.add(const Duration(days: 1)))} WIB',
                       style: theme.textTheme.headlineSmall,

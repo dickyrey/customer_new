@@ -4,6 +4,7 @@
 // ignore_for_file: comment_references
 
 library;
+//
 // ignore_for_file: constant_identifier_names
 
 const String MAJOR_VERSION = '1';

@@ -163,6 +163,7 @@ class ChangeNumberBodyWidget extends StatelessWidget {
                             controller: countController,
                             build: (_, timer) {
                               return Text(
+                                //
                                 // ignore: lines_longer_than_80_chars
                                 '${lang.please_wait_in} ${timer.toInt()} ${lang.seconds_for_resend_otp_code}',
                                 style: theme.textTheme.bodyMedium,

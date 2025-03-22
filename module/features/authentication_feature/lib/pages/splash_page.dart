@@ -50,11 +50,15 @@ class _SplashPageState extends State<SplashPage> {
   Future<void> goNextRoute(String path) async {
     Future.delayed(
       const Duration(seconds: 1),
-      () => Navigator.pushNamedAndRemoveUntil(
-        context,
-        path,
-        (Route<dynamic> route) => false,
-      ),
+      () {
+        if (mounted) {
+          Navigator.pushNamedAndRemoveUntil(
+            context,
+            path,
+            (Route<dynamic> route) => false,
+          );
+        }
+      },
     );
   }
 }

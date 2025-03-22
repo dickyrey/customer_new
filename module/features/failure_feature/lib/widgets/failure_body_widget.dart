@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:shared_common/constants.dart';
 import 'package:shared_common/constants/vector_constants.dart';
@@ -213,7 +214,9 @@ class _FailureDisplayBodyWidget extends StatelessWidget {
         await showToast(msg: lang.whatsapp_not_installed);
         throw Exception('Could not launch WhatsApp');
       }
-    } catch (e) {
+    } on PlatformException {
+      await showToast(msg: lang.whatsapp_not_installed);
+    } on Exception {
       await showToast(msg: lang.whatsapp_not_installed);
     }
   }

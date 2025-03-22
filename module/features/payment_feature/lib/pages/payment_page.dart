@@ -46,7 +46,8 @@ class _PaymentPageState extends State<PaymentPage> {
 
     return PopScope(
       canPop: _willPop,
-      onPopInvoked: (v) => _willPopCallback(context, didPop: v),
+      onPopInvokedWithResult: (v, result) =>
+          _willPopCallback(context, didPop: v),
       child: Scaffold(
         appBar: widget.args.payment.type == 'transfer'
             ? AppBar(

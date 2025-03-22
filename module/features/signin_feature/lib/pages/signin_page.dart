@@ -23,6 +23,7 @@ class SigninPage extends StatelessWidget {
               context,
               type: SnackbarType.info,
               labelText: lang
+                  //
                   // ignore: lines_longer_than_80_chars
                   .you_have_requested_an_otp_code_before_wait_about_1_minute_to_get_the_otp_code,
               labelButton: lang.close,

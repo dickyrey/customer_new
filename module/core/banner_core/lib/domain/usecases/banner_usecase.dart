@@ -4,6 +4,8 @@ import 'package:banner_core/domain/repositories/banner_repository.dart';
 import 'package:shared_common/failure.dart';
 import 'package:shared_libraries/dartz/dartz.dart';
 
+// We want to define an interface for the banner usecase,
+// but Dart doesn't allow empty abstract classes.
 // ignore: one_member_abstracts
 abstract class BannerUsecase {
   Future<Either<Failure, List<Banner>>> getBannerList();

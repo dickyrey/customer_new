@@ -147,6 +147,7 @@ class _TransferPaymentBodyWidget extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
+                      //
                       // ignore: lines_longer_than_80_chars
                       '${DateFormat.yMMMMd('id-ID').format(args.createdAt.add(const Duration(minutes: 15)))} | ${DateFormat.Hm('id-ID').format(args.createdAt.add(const Duration(minutes: 15)))} WIB',
                       style: theme.textTheme.headlineSmall,

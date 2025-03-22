@@ -2,6 +2,7 @@ import 'package:authentication_feature/bloc/auth_watcher/auth_watcher_bloc.dart'
 import 'package:banner_feature/bloc/banner_watcher/banner_watcher_bloc.dart';
 import 'package:dashboard_feature/bloc/order_counter_form/order_counter_form_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:shared_arguments/checkout_argument.dart';
 import 'package:shared_common/constants.dart';
@@ -158,9 +159,7 @@ class DashboardBodyWidget extends StatelessWidget {
                             vertical: SPACE_SMALL,
                           ),
                           decoration: BoxDecoration(
-                            color: theme.primaryColor.withOpacity(
-                              .2,
-                            ),
+                            color: theme.primaryColor.withValues(alpha: .2),
                             borderRadius: BorderRadius.circular(RADIUS),
                           ),
                           child: Row(
@@ -182,6 +181,7 @@ class DashboardBodyWidget extends StatelessWidget {
                                     Text(
                                       state.user.address.id == 0
                                           ? lang.select_primary_address_now
+                                          //
                                           // ignore: lines_longer_than_80_chars
                                           : '${state.user.address.street.street} ${state.user.address.address}',
                                       style: theme.textTheme.titleMedium,
@@ -500,7 +500,9 @@ class DashboardBodyWidget extends StatelessWidget {
         await showToast(msg: lang.whatsapp_not_installed);
         throw Exception('Could not launch WhatsApp');
       }
-    } catch (e) {
+    } on PlatformException {
+      await showToast(msg: lang.whatsapp_not_installed);
+    } on Exception {
       await showToast(msg: lang.whatsapp_not_installed);
     }
   }
@@ -538,10 +540,8 @@ class _PoinAndDepositCardWidget extends StatelessWidget {
               SvgPicture.asset(
                 isPoin ? AssetIcons.point : AssetIcons.deposit,
                 width: 25,
-                colorFilter: const ColorFilter.mode(
-                  Colors.white,
-                  BlendMode.srcIn,
-                ),
+                colorFilter:
+                    const ColorFilter.mode(Colors.white, BlendMode.srcIn),
               ),
               const SizedBox(width: SPACE_MEDIUM),
               Expanded(

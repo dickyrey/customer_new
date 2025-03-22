@@ -109,6 +109,7 @@ class TransactionOverviewCardWidget extends StatelessWidget {
                                 style: theme.textTheme.titleMedium,
                               ),
                               Text(
+                                //
                                 // ignore: lines_longer_than_80_chars
                                 '${data.productList.first.amount} ${lang.galon}',
                                 style: theme.textTheme.headlineSmall,

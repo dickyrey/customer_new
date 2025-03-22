@@ -16,7 +16,7 @@ class ShimmerWidget extends StatelessWidget {
 
     return Shimmer.fromColors(
       baseColor: theme.dividerColor,
-      highlightColor: theme.colorScheme.surface.withOpacity(.1),
+      highlightColor: theme.colorScheme.surface.withValues(alpha: .1),
       child: child,
     );
   }

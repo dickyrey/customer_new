@@ -11,6 +11,8 @@ import 'package:shared_common/exception_message.dart';
 import 'package:shared_libraries/http/http.dart' as http;
 import 'package:shared_libraries/shared_preferences/shared_preferences.dart';
 
+// We want to define an interface for the banner data source,
+// but Dart doesn't allow empty abstract classes.
 // ignore: one_member_abstracts
 abstract class BannerDataSource {
   Future<List<BannerModel>> getBannerList();
